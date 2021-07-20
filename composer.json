@@ -1,5 +1,5 @@
 {
-    "name": "dfridrich/qr-platba",
+    "name": "darnel/qr-platba",
     "type": "library",
     "description": "Generování QR plateb v PHP.",
     "keywords": [
@@ -16,6 +16,7 @@
         }
     ],
     "require": {
+        "ext-mbstring": "*",
         "php": ">=5.6.0",
         "endroid/qr-code": "^2.0"
     },
