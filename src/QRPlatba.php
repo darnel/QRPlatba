@@ -265,6 +265,20 @@ class QRPlatba
     }
 
     /**
+     * @param $ip
+     *
+     * https://qr-platba.cz/pro-vyvojare/specifikace-formatu/
+     *
+     * @return $this
+     */
+    public function setImmediatePayment($ip = true)
+    {
+        $this->keys['PT'] = $ip ? 'IP' : null;
+
+        return $this;
+    }
+
+    /**
      * Metoda vrátí QR Platbu jako textový řetězec.
      *
      * @return string
